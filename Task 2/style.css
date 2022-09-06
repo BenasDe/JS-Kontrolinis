@@ -17,7 +17,7 @@
   background-color: #f1f1f1;
 }
 
-.btn {
+#btn {
   width: 300px;
   display: flex;
   justify-content: center;

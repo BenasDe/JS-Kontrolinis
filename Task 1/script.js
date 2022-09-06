@@ -14,9 +14,4 @@ function kiloweightConvert(value) {
     document.getElementById("Grams").innerHTML = value * 1000;
     document.getElementById("Stones").innerHTML = value * 0.1574;
 }
-
-// https://www.geeksforgeeks.org/how-to-create-a-weight-converter-with-html-and-javascript/
-  document.getElementById("Pounds").innerHTML=value*2.2046;
-  document.getElementById("Ounces").innerHTML=value*35.274;
-  document.getElementById("Grams").innerHTML=value*1000;
-  document.getElementById("Stones").innerHTML=value*0.1574;
+//
