@@ -16,11 +16,8 @@ fetch("cars.json")
   .then((response) => {
     return response.json();
   })
-  // fetch(ENDPOINT)
-  //   .then((cars) => {
-  //     return cars.json();
-  //   })
-  .then((data) => {
+    .then((data) => {
+      console.log(data)
     let output = data;
     output.map(function (output) {
       let li = document.createElement("li");
