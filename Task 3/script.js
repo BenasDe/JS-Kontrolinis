@@ -23,22 +23,20 @@ btn.onclick = function () {
         .then((data) => {
             let output = data;
             output.map(function (output) {
-                
-            }
-
-//console.log(data)
-        
-
-/*   output.map(function (author) {
                 let li = document.createElement('li');
-                let avatar_url = document.createElement('h3');
-                let login = document.createElement('span');
-
-                avatar_url.innerHTML = `${author.avatar_url}`;
-                login.innerHTML = `${author.login}`;
-
-                li.appendChild(name);
-                li.appendChild(email);
-                list.appendChild(li);}*/
+                let login = document.createElement('h4');
+                let avatar_url = document.createElement('span');
+                login.innerHTML = `${output.login}`;
+                avatar_url.innerHTML = `${output.avatar_url}`;
+                li.appendChild(login);
+                li.appendChild(avatar_url);
+                list.appendChild(li);
             });
-        }
+            document.getElementById('message').style.visibility = 'hidden';
+        })
+        .catch(function(error) {
+            console.log(error);
+          });
+      
+        ul.appendChild(list);
+}
