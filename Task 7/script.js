@@ -10,4 +10,6 @@ const audi = {
   year: 2005,
   color: "white",
 };
-console.log(Object.keys(audi));
+// console.log(Object.keys(audi))
+const result = Object.keys(audi).map((key) => [key]);
+alert(result);
