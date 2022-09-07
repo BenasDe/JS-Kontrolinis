@@ -30,10 +30,9 @@ fetch("cars.json")
       li.appendChild(brand);
       li.appendChild(models);
       list.appendChild(li);
+      ul.appendChild(list);
     });
   })
   .catch(function (error) {
     console.log(error);
   });
-
-ul.appendChild(list);
