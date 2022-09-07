@@ -8,7 +8,7 @@ atveju grąžins visų "users" amžiaus visurkį kaip skaičių.
 atveju grąžins visų "users" vardus naujame masyve pvz., ['John Smith', 'Ann Smith'..].
 -------------------------------------------------------------------------- */
 
-const people = [
+const users = [
   { id: "1", name: "John Smith", age: 20 },
   { id: "2", name: "Ann Smith", age: 24 },
   { id: "3", name: "Tom Jones", age: 31 },
@@ -19,10 +19,14 @@ const people = [
   { id: "8", name: "Simon Peterson", age: 30 },
   { id: "9", name: "Daniel Cane", age: 51 },
 ];
+//Funkcija 1
 let getAverage = (arr) => {
   let reducer = (total, currentValue) => total + currentValue;
   let sum = arr.reduce(reducer);
   return sum / arr.length;
 };
-
-
+let ages = users.map((person) => person.age);
+console.log(getAverage(ages));
+//Funkscija 2
+let names = users.map((person) => person.name);
+console.log(names);
